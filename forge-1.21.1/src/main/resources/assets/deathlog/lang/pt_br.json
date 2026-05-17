@@ -1,0 +1,6 @@
+{
+    "deathlog.title": "Death Log — suas últimas %s mortes (mais recente primeiro):",
+    "deathlog.entry": "#%1$s · dia %2$s · (%3$s, %4$s, %5$s) %6$s — %7$s",
+    "deathlog.none": "Nenhuma morte registrada ainda.",
+    "deathlog.playeronly": "Só um jogador tem registro de mortes (ou esse jogador está offline)."
+}

@@ -1,0 +1,6 @@
+{
+    "deathlog.title": "Death Log — your last %s deaths (newest first):",
+    "deathlog.entry": "#%s · day %s · (%s, %s, %s) %s — %s",
+    "deathlog.none": "No deaths recorded yet.",
+    "deathlog.playeronly": "Only a player has a death log (or that player isn't online)."
+}

@@ -1,0 +1,6 @@
+{
+    "deathlog.title": "Death Log — 최근 %s건의 죽음 (최신순):",
+    "deathlog.entry": "#%1$s · %2$s일차 · (%3$s, %4$s, %5$s) %6$s — %7$s",
+    "deathlog.none": "아직 죽음 기록이 없어요.",
+    "deathlog.playeronly": "죽음 기록은 플레이어만 가질 수 있어요 (또는 그 플레이어가 오프라인)."
+}

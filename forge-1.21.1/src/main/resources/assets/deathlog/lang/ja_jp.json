@@ -1,0 +1,6 @@
+{
+    "deathlog.title": "Death Log — 直近 %s 件の死亡（新しい順）：",
+    "deathlog.entry": "#%1$s · %2$s 日目 · (%3$s, %4$s, %5$s) %6$s — %7$s",
+    "deathlog.none": "まだ死亡記録はないよ。",
+    "deathlog.playeronly": "死亡ログを持てるのはプレイヤーだけ（またはそのプレイヤーがオフライン）。"
+}
