@@ -40,7 +40,7 @@ Server-side, read-only against the world (listens to vanilla death events, store
 
 ## Known limitations
 
-Keeps the last 10 deaths per player (older ones roll off). Cause text is the vanilla death message captured at death time.
+Keeps the last 10 deaths per player (older ones roll off). Cause text is the vanilla death message captured at death time. `/deaths <player>` (op) only resolves players who are **currently online** (your own `/deaths` always works).
 
 ## Install
 
