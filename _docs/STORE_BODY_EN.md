@@ -1,15 +1,8 @@
 # Death Log
 
-> `/deaths` — a persistent list of where you last died (coords, dimension, day, cause), kept across restarts. No gravestone block, no map mod: just walk back to your stuff.
+A persistent list of where you last died — coordinates, dimension, in-world day, and cause — kept across restarts. No gravestone block, no map mod: run `/deaths` and walk back to your stuff.
 
-"I lost my stuff and can't find where I died" is endless on r/feedthebeast. The recovery compass is single-use; gravestone mods add blocks that bug out with minimaps. Death Log is just a lightweight server-side history you can check any time.
-
-- 📓 `/deaths` — your last 10 deaths, newest first
-- 🧭 Coordinates + dimension + in-world day + cause per entry
-- 💾 Persists across server restarts (vanilla world data)
-- 🤝 `/deaths <player>` for ops
-
-## What it does / Usage
+The recovery compass is single-use, and gravestone mods add blocks that can clash with minimaps. Death Log is a lightweight server-side history instead: it records each death and lets you look it up any time.
 
 ```
 Death Log — your last 3 deaths (newest first):
@@ -18,44 +11,10 @@ Death Log — your last 3 deaths (newest first):
 #3 · day 4 · (88, 70, -150) the_nether — Walked into fire
 ```
 
-`/deaths` shows your own history; `/deaths <player>` is op-only.
+`/deaths` shows your own history (last 10, newest first); `/deaths <player>` is op-only and resolves currently-online players. Cause text is the vanilla death message captured at the time of death, stored in vanilla world data so it survives restarts.
 
-Sibling to **Death Forensics** (which explains your single last death in depth) — this is the running list. They don't overlap and pair well.
+It's read-only and server-side — no mixin, no config, no blocks or items — so it can't conflict with other mods. Pairs with the sibling mod Death Forensics, which explains a single death in depth.
 
-## Supported loaders / versions
+Server-side — install on the server only.
 
-| Minecraft | NeoForge | Forge | Fabric |
-|---|:---:|:---:|:---:|
-| 1.21.1 | ✅ | ✅ | ✅ |
-| 1.20.1 | — | ✅ | ✅ |
-
-Ships for NeoForge / Forge / Fabric on Minecraft 1.21.1, and Forge / Fabric on Minecraft 1.20.1 (NeoForge has no 1.20.1 build). Server-side, dependency-free, identical behaviour on every loader.
-
-## Dependencies
-
-None.
-
-## Compatibility & scope
-
-Server-side, read-only against the world (listens to vanilla death events, stores a small record). No mixin, no config, no blocks/items — can't conflict with other mods.
-
-## Known limitations
-
-Keeps the last 10 deaths per player (older ones roll off). Cause text is the vanilla death message captured at death time. `/deaths <player>` (op) only resolves players who are **currently online** (your own `/deaths` always works).
-
-## Install
-
-1. Install your mod loader — NeoForge, Forge, or Fabric — for Minecraft 1.21.1 or 1.20.1.
-2. Drop `deathlog-0.1.0.jar` into `mods/`. Server-side.
-
-- Minecraft 1.21.1 · NeoForge · JDK 21
-
-## Languages
-
-Output localized in 9 languages (machine-baseline; native-speaker PRs welcome).
-
-## License
-
-MIT — modpack inclusion welcome, no credit required.
-
-Author: KURONAMI
+Free to use in any modpack. Source and issues: https://github.com/KURONAMI333/death-log
