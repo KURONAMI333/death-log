@@ -47,7 +47,7 @@ public final class DeathLogCommand {
             ServerPlayer t = EntityArgument.getPlayer(ctx, "player");
             return list(ctx.getSource(),
                 DeathLogData.get(ctx.getSource().getServer()).get(t.getUUID()));
-        } catch (Exception e) {
+        } catch (com.mojang.brigadier.exceptions.CommandSyntaxException e) {
             ctx.getSource().sendFailure(Component.translatable("deathlog.playeronly"));
             return 0;
         }
