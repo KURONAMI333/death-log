@@ -1,5 +1,3 @@
-# Death Log
-
 A persistent list of where you last died — coordinates, dimension, in-world day, and cause — kept across restarts. No gravestone block, no map mod: run `/deaths` and walk back to your stuff.
 
 The recovery compass is single-use, and gravestone mods add blocks that can clash with minimaps. Death Log is a lightweight server-side history instead: it records each death and lets you look it up any time.
@@ -15,6 +13,6 @@ Death Log — your last 3 deaths (newest first):
 
 It's read-only and server-side — no mixin, no config, no blocks or items — so it can't conflict with other mods. Pairs with the sibling mod Death Forensics, which explains a single death in depth.
 
-Server-side — install on the server only.
+Bugs and questions: comment on the CurseForge page, or DM @kuronami333 on X.
 
-Free to use in any modpack. Source and issues: https://github.com/KURONAMI333/death-log
+All Rights Reserved. Modpack inclusion is allowed without permission or credit. Source: https://github.com/KURONAMI333/death-log
